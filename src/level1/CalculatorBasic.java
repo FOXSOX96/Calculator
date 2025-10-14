@@ -10,7 +10,7 @@ public class CalculatorBasic {
         /*첫번째 숫자*/
         // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
         Scanner scanner = new Scanner(System.in);
-
+//
         int a;
 
         try {
