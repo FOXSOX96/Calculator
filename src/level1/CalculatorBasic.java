@@ -31,7 +31,7 @@ public class CalculatorBasic {
 
         /*두번째 숫자*/
         int b;
-        System.out.print("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+        System.out.print("두 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
         while (true) {
             if (scanner.hasNextInt()) {
                 b = scanner.nextInt();
@@ -126,7 +126,7 @@ public class CalculatorBasic {
 
 
                 /*두번째 숫자*/
-                System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+                System.out.println("두 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
                 System.out.println("이전 입력값: " + b );
                 while (true) {
                     if (scanner.hasNextInt()) {
