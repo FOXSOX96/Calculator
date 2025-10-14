@@ -50,15 +50,12 @@ public class CalculatorBasic {
 
         System.out.print("사칙연산 기호를 입력하세요: ");
         op = scanner.next().charAt(0);
-            /*다른 한 글자 입력시 재입력 요청*/
-            while (!(op == ('+') || op == ('-') || op == ('*') || op == ('/'))) {
-                System.out.println(" +, -, /, * 로 사칙연산을 입력해주세요 : ");
-                op = scanner.next().charAt(0);
-            }
+        /*다른 한 글자 입력시 재입력 요청*/
+        while (!(op == ('+') || op == ('-') || op == ('*') || op == ('/'))) {
+            System.out.println(" +, -, /, * 로 사칙연산을 입력해주세요 : ");
+            op = scanner.next().charAt(0);
+        }
     }
 
 
 }
-
-
-
