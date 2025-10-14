@@ -60,7 +60,7 @@ public class CalculatorBasic {
 
         /* 연산 */
         int result = 0;
-        double dResult = (double) result; /*나눗셈에서만 실수사용*/
+        double dResult = result; /*나눗셈에서만 실수사용*/
         switch (op) {
             case '+':
                 result = a + b;
@@ -99,15 +99,16 @@ public class CalculatorBasic {
         }
         if (repeat == 'N' || repeat == ('n')) {
             return;
-
-        } else if (repeat == ('Y') || repeat == ('y')) {
+        } else {
             while (true) {
 
 
                 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ반복계산실시ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 
 
-                System.out.print("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+                System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+                System.out.println("이전 입력값: " + a );
+
                 while (true) {
                     if (scanner.hasNextInt()) {
                         a = scanner.nextInt();
@@ -125,7 +126,8 @@ public class CalculatorBasic {
 
 
                 /*두번째 숫자*/
-                System.out.print("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+                System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+                System.out.println("이전 입력값: " + b );
                 while (true) {
                     if (scanner.hasNextInt()) {
                         b = scanner.nextInt();
@@ -142,7 +144,8 @@ public class CalculatorBasic {
 
                 /*사칙연산*/
                 // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
-                System.out.print("사칙연산 기호를 입력하세요: ");
+                System.out.println("사칙연산 기호를 입력하세요: ");
+                System.out.println("이전 입력값: " + op );
                 op = scanner.next().charAt(0);
                 /*다른 한 글자 입력시 재입력 요청*/
                 while (!(op == ('+') || op == ('-') || op == ('*') || op == ('/'))) {
@@ -174,9 +177,6 @@ public class CalculatorBasic {
                 } else {
                     System.out.println("결과: " + a + " " + op + " " + b + " = " + result);
                 }
-
-
-                /*반복문을 사용하되, 반복의 종료를 알려주는 'N' 문자를 입력하기 전까지 무한으로 계산을 진행할 수 있도록 소스 코드를 수정하기*/
 
                 System.out.println("더 계산하시겠습니까? (Y / N)");
 

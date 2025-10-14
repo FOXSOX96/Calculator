@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림">
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" afterDir="false" />
     </list>
@@ -108,13 +108,22 @@
       <option name="project" value="LOCAL" />
       <updated>1760433860198</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/">
+      <option name="closed" value="true" />
+      <created>1760435297456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760435297456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : github scanmerge 시스템에서 재입력" />
     <MESSAGE value="feat : github scan branch에만 업로드하려 했는데branch를 옮겨다니며 확인하다가 변경사항 Aborted로 코드 날라감. github에 merge된 코드 다시입력" />
     <MESSAGE value="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림" />
+    <MESSAGE value="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/" />
   </component>
 </project>
