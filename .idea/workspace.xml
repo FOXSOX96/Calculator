@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : 양의 정수(0 포함)를 입력받기">
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/">
+      <change afterPath="$PROJECT_DIR$/src/level1/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +28,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "FOXSOX96"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/FOXSOX96/Calculator.git",
-    "accountId": "2dca6085-7bca-463f-b252-02c319565719"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -48,19 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CalculatorBasic.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "scan",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/won/Desktop/Developer/2025/Sparta/Calculator",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CalculatorBasic.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;scan&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/won/Desktop/Developer/2025/Sparta/Calculator&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="CalculatorBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="level1.CalculatorBasic" />
@@ -77,6 +65,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatorBasic" />
         <item itemvalue="Application.CalculatorBasic" />
       </list>
     </recent_temporary>
@@ -96,30 +85,46 @@
       <option name="presentableId" value="Default" />
       <updated>1760404107243</updated>
     </task>
-    <task id="LOCAL-00001" summary="feat : 양의 정수(0 포함)를 입력받기">
+    <task id="LOCAL-00001" summary="feat : github scanmerge 시스템에서 재입력">
       <option name="closed" value="true" />
-      <created>1760421220478</created>
+      <created>1760426758796</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1760421220478</updated>
+      <updated>1760426758796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat : github scan branch에만 업로드하려 했는데branch를 옮겨다니며 확인하다가 변경사항 Aborted로 코드 날라감. github에 merge된 코드 다시입력">
+      <option name="closed" value="true" />
+      <created>1760426994421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760426994421</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림">
+      <option name="closed" value="true" />
+      <created>1760433860198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760433860198</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/">
+      <option name="closed" value="true" />
+      <created>1760435297456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760435297456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat : 양의 정수(0 포함)를 입력받기" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 양의 정수(0 포함)를 입력받기" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/level1/CalculatorBasic.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat : github scanmerge 시스템에서 재입력" />
+    <MESSAGE value="feat : github scan branch에만 업로드하려 했는데branch를 옮겨다니며 확인하다가 변경사항 Aborted로 코드 날라감. github에 merge된 코드 다시입력" />
+    <MESSAGE value="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림" />
+    <MESSAGE value="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/" />
   </component>
 </project>
