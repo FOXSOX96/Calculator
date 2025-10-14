@@ -24,7 +24,7 @@ public class CalculatorBasic {
             }
             /*문자, 실수 입력으로 에러나면 다시 알려주기*/
         } catch (Exception e) {
-            System.out.println("0 또는 양의 정수를 입력해주세요");
+            System.out.println("**에러: 0 또는 양의 정수를 입력해야합니다");
         }
 
         /*두번째 숫자*/
@@ -35,16 +35,26 @@ public class CalculatorBasic {
             b = scanner.nextInt();
 
             /*음수 입력시 재입력 요청*/
-            while (b < 0) {
+            while (!(b >= 0)) {
                 System.out.println("0 또는 양의 정수를 입력해주세요 : ");
                 b = scanner.nextInt();
             }
             /*문자, 실수 입력으로 에러나면 다시 알려주기*/
         } catch (Exception e) {
-            System.out.println("0 또는 양의 정수를 입력해주세요");
+            System.out.println("**에러: 0 또는 양의 정수를 입력해야합니다");
         }
 
+        /*사칙연산*/
+        // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
+        char op; /*사칙연산기호 : foreBasicOperation*/
 
+        System.out.print("사칙연산 기호를 입력하세요: ");
+        op = scanner.next().charAt(0);
+            /*다른 한 글자 입력시 재입력 요청*/
+            while (!(op == ('+') || op == ('-') || op == ('*') || op == ('/'))) {
+                System.out.println(" +, -, /, * 로 사칙연산을 입력해주세요 : ");
+                op = scanner.next().charAt(0);
+            }
     }
 
 
