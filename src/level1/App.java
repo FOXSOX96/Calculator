@@ -2,7 +2,7 @@ package level1;
 
 import java.util.Scanner;
 
-public class CalculatorBasic {
+public class App {
 
     public static void main(String[] args) {
 
