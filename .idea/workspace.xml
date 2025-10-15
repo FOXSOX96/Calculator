@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="">
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="style : 반복 N입력시 retrun에 주석추가">
+      <change afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/CalculatorBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="level1" />
+        <entry key="$PROJECT_DIR$" value="level2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,6 +51,9 @@
     &quot;repository&quot;: &quot;Calculator&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -58,26 +62,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CalculatorBasic.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;scan&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/won/Desktop/Developer/2025/Sparta/Calculator&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Calculator.executor": "Run",
+    "Application.CalculatorBasic.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Calculator",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/won/Desktop/Developer/2025/Sparta/Calculator",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/level1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CalculatorBasic">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="level1.App" />
       <module name="CalculatorProject" />
@@ -91,9 +96,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="level2.Calculator" />
+      <module name="CalculatorProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="level2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CalculatorBasic" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.CalculatorBasic" />
         <item itemvalue="Application.CalculatorBasic" />
       </list>
@@ -154,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760437804736</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="style : level1 class 이름 CalculatorBasic에서 App으로 변경">
+      <option name="closed" value="true" />
+      <created>1760512083876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760512083876</updated>
+    </task>
+    <task id="LOCAL-00007" summary="style : 반복 N입력시 retrun에 주석추가">
+      <option name="closed" value="true" />
+      <created>1760512236391</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760512236391</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +198,8 @@
     <MESSAGE value="feat : 연산기능 추가&#10;fix : try , catch 구문으로 에러시 출력을 주었는데 b = scanner.nextInt();으로 할당하는 부분이 괄호에 들어가 있어서 이후 연산에서 재사용불가했음 -&gt; scanner.hasNextInt()사용 후 에러부분에서 scanner.next()로 값버림" />
     <MESSAGE value="feat : 계산 반복기능 추가 &#10;\n&#10;fix : 1+1이 2.0으로 출력됨 -&gt;  double dResult = (double) result; /*나눗셈에서만 실수사용*/" />
     <MESSAGE value="docs : README.md 파일 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs : README.md 파일 추가" />
+    <MESSAGE value="style : level1 class 이름 CalculatorBasic에서 App으로 변경" />
+    <MESSAGE value="style : 반복 N입력시 retrun에 주석추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="style : 반복 N입력시 retrun에 주석추가" />
   </component>
 </project>
