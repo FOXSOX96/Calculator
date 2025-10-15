@@ -98,7 +98,7 @@ public class App {
             repeat = scanner.next().charAt(0);
         }
         if (repeat == 'N' || repeat == ('n')) {
-            return;
+            return; /*작업종료*/
         } else {
             while (true) {
 
