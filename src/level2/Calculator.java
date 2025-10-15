@@ -91,8 +91,9 @@ public class Calculator {
         /* 정수 계산에 소수점.0으로 표기되는 문제해결*/
         DecimalFormat df = new DecimalFormat("#.#################");
         System.out.println("결과: " + a + " " + op + " " + b + " = " + df.format(result));
-        resultList.add(result);
 
+        /*ArrayList 컬렉션*/
+        resultList.add(result);
         System.out.print("결과값 리스트 : ");
         for (double r : resultList) {
         System.out.print("[" + df.format(r) + "] ");
@@ -100,6 +101,15 @@ public class Calculator {
         System.out.println();
 
         return result;
+
+        }
+
+
+    public ArrayList<Double> getResultList() {
+        return resultList;
+    }
+    public void setResultList(ArrayList<Double> resultList) {
+        this.resultList = resultList;
     }
 
 

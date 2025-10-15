@@ -2,6 +2,8 @@ package level1;
 
 import level2.Calculator;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -37,6 +39,18 @@ public class App {
             }
 
         }
+
+        /*게터*/
+        System.out.println(c.getResultList());
+
+        /*세터*/
+        ArrayList<Double> newList = new ArrayList<>();
+        newList.add(99.9999999);
+        newList.add(2.0);
+
+        c.setResultList(newList);
+        System.out.println(c.getResultList());
+
 
     }
 
