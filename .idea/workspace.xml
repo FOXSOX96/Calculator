@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="style : 반복 N입력시 retrun에 주석추가">
-      <change afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : 계산기능을 Calculator 클래스로 옮기고 생성자로 가져오게함. 이 Calculator 클래스에 Arraylist 컬렉션기능 추가&#10;refactor : 리턴 값이 실수와 정수로 나누어져 컬렉션에 저장하기 어려움 -&gt; 정수 리턴을 (int)return으로 형변환하여 변수는 return으로 통일 (더했을때 소수점 표기하기 싫어서 이전에 fix해뒀었음)&#10;fix : 나누어 떨어질 때 1이 아니라 1.0으로 표기됨 -&gt; 나누어떨어질 때 (int)return으로 형변환">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760512236391</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat : 계산기능을 Calculator 클래스로 옮기고 생성자로 가져오게함. 이 Calculator 클래스에 Arraylist 컬렉션기능 추가&#10;refactor : 리턴 값이 실수와 정수로 나누어져 컬렉션에 저장하기 어려움 -&gt; 정수 리턴을 (int)return으로 형변환하여 변수는 return으로 통일 (더했을때 소수점 표기하기 싫어서 이전에 fix해뒀었음)&#10;fix : 나누어 떨어질 때 1이 아니라 1.0으로 표기됨 -&gt; 나누어떨어질 때 (int)return으로 형변환">
+      <option name="closed" value="true" />
+      <created>1760523508271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760523508271</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +208,7 @@
     <MESSAGE value="docs : README.md 파일 추가" />
     <MESSAGE value="style : level1 class 이름 CalculatorBasic에서 App으로 변경" />
     <MESSAGE value="style : 반복 N입력시 retrun에 주석추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="style : 반복 N입력시 retrun에 주석추가" />
+    <MESSAGE value="feat : 계산기능을 Calculator 클래스로 옮기고 생성자로 가져오게함. 이 Calculator 클래스에 Arraylist 컬렉션기능 추가&#10;refactor : 리턴 값이 실수와 정수로 나누어져 컬렉션에 저장하기 어려움 -&gt; 정수 리턴을 (int)return으로 형변환하여 변수는 return으로 통일 (더했을때 소수점 표기하기 싫어서 이전에 fix해뒀었음)&#10;fix : 나누어 떨어질 때 1이 아니라 1.0으로 표기됨 -&gt; 나누어떨어질 때 (int)return으로 형변환" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 계산기능을 Calculator 클래스로 옮기고 생성자로 가져오게함. 이 Calculator 클래스에 Arraylist 컬렉션기능 추가&#10;refactor : 리턴 값이 실수와 정수로 나누어져 컬렉션에 저장하기 어려움 -&gt; 정수 리턴을 (int)return으로 형변환하여 변수는 return으로 통일 (더했을때 소수점 표기하기 싫어서 이전에 fix해뒀었음)&#10;fix : 나누어 떨어질 때 1이 아니라 1.0으로 표기됨 -&gt; 나누어떨어질 때 (int)return으로 형변환" />
   </component>
 </project>
