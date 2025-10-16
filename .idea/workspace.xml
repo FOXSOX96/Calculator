@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성">
+      <change afterPath="$PROJECT_DIR$/src/level1/Level1App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="level2" />
+        <entry key="$PROJECT_DIR$" value="Calculator" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,33 +62,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CalculatorBasic.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#4 on Calculator&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/won/Desktop/Developer/2025/Sparta/Calculator&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Calculator.executor": "Run",
+    "Application.CalculatorBasic.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "level2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/won/Desktop/Developer/2025/Sparta/Calculator",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/level1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorBasic">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="level1.App" />
+      <option name="MAIN_CLASS_NAME" value="level2.App" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="level1.*" />
+          <option name="PATTERN" value="level2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.CalculatorBasic" />
         <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.CalculatorBasic" />
-        <item itemvalue="Application.CalculatorBasic" />
       </list>
     </recent_temporary>
   </component>
