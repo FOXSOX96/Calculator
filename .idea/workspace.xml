@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="fix : resultList.add(result); 에서 캐스팅(int) 없어진채 (double)로 저장되고 출력되는 문제 -&gt; 출력시 DecimalFormat적용하고 캐스팅은삭제&#10;style : 사칙연산 순서변경, print 구문 println으로 변경&#10;refactor : level2에서는 클래스 설정이 되므로 반복문 긴 거 모두 없애고 c.calculator를 실행하는 것으로 변경">
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
@@ -69,7 +69,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Calculator",
+    "git-widget-placeholder": "#4 on Calculator",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/won/Desktop/Developer/2025/Sparta/Calculator",
     "project.structure.last.edited": "Project",
@@ -213,8 +213,27 @@
       <option name="project" value="LOCAL" />
       <updated>1760533245755</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성">
+      <option name="closed" value="true" />
+      <created>1760537130236</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760537130237</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : github scanmerge 시스템에서 재입력" />
@@ -226,6 +245,7 @@
     <MESSAGE value="style : 반복 N입력시 retrun에 주석추가" />
     <MESSAGE value="feat : 계산기능을 Calculator 클래스로 옮기고 생성자로 가져오게함. 이 Calculator 클래스에 Arraylist 컬렉션기능 추가&#10;refactor : 리턴 값이 실수와 정수로 나누어져 컬렉션에 저장하기 어려움 -&gt; 정수 리턴을 (int)return으로 형변환하여 변수는 return으로 통일 (더했을때 소수점 표기하기 싫어서 이전에 fix해뒀었음)&#10;fix : 나누어 떨어질 때 1이 아니라 1.0으로 표기됨 -&gt; 나누어떨어질 때 (int)return으로 형변환" />
     <MESSAGE value="fix : resultList.add(result); 에서 캐스팅(int) 없어진채 (double)로 저장되고 출력되는 문제 -&gt; 출력시 DecimalFormat적용하고 캐스팅은삭제&#10;style : 사칙연산 순서변경, print 구문 println으로 변경&#10;refactor : level2에서는 클래스 설정이 되므로 반복문 긴 거 모두 없애고 c.calculator를 실행하는 것으로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : resultList.add(result); 에서 캐스팅(int) 없어진채 (double)로 저장되고 출력되는 문제 -&gt; 출력시 DecimalFormat적용하고 캐스팅은삭제&#10;style : 사칙연산 순서변경, print 구문 println으로 변경&#10;refactor : level2에서는 클래스 설정이 되므로 반복문 긴 거 모두 없애고 c.calculator를 실행하는 것으로 변경" />
+    <MESSAGE value="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성" />
   </component>
 </project>

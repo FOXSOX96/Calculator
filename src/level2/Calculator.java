@@ -13,8 +13,9 @@ public class Calculator {
 
     /**
      * 두 개의 양의 정수(또는 0)를 입력받아 사칙연산(+, -, *, /)을 수행하는 메서드
-     * @param a : 첫 번째 양의 정수(또는 0)
-     * @param b : 두 번째 양의 정수(또는 0)
+     *
+     * @param a  : 첫 번째 양의 정수(또는 0)
+     * @param b  : 두 번째 양의 정수(또는 0)
      * @param op : 사칙연산 (operation)
      * @return result: 입력시 결과값 생성
      */
@@ -23,20 +24,7 @@ public class Calculator {
 
         /*첫번째 숫자*/
         System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
-
-        while (true) {
-            if (scanner.hasNextInt()) {
-                a = scanner.nextInt();
-                if (a >= 0) {
-                    break; /*올바른 입력 -> 반복 종료*/
-                } else {
-                    System.out.println("0 또는 양의 정수를 입력해주세요 : "); /*음수 입력시 재입력 요청*/
-                }
-            } else {
-                System.out.println("**에러: 0 또는 양의 정수를 입력해야합니다");
-                scanner.next(); /*잘못된 입력 제거*/
-            }
-        }
+        a = setInt(a);
 
         /*사칙연산*/
         // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
@@ -52,33 +40,20 @@ public class Calculator {
 
         /*두번째 숫자*/
         System.out.println("두 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
-
-        while (true) {
-            if (scanner.hasNextInt()) {
-                b = scanner.nextInt();
-                if (b >= 0) {
-                    break; /*올바른 입력 -> 반복 종료*/
-                } else {
-                    System.out.println("0 또는 양의 정수를 입력해주세요 : "); /*음수 입력시 재입력 요청*/
-                }
-            } else {
-                System.out.println("**에러: 0 또는 양의 정수를 입력해야합니다");
-                scanner.next(); /*잘못된 입력 제거*/
-            }
-        }
+        b = setInt(b);
 
         /* 연산 */
 
         double result = 0;
         switch (op) {
             case '+':
-                result = a + b;
+                result = (double) a + (double) b; /*21억 오버플로우 방지*/
                 break;
             case '-':
-                result = a - b;
+                result = (double) a - (double) b;
                 break;
             case '*':
-                result = a * b;
+                result = (double) a * (double) b;
                 break;
             case '/':
                 if (b == 0) {
@@ -96,24 +71,49 @@ public class Calculator {
         resultList.add(result);
         System.out.print("결과값 리스트 : ");
         for (double r : resultList) {
-        System.out.print("[" + df.format(r) + "] ");
+            System.out.print("[" + df.format(r) + "] ");
         }
         System.out.println();
 
         return result;
 
+    }
+
+    /*계산 메서드*/
+    public int setInt(int num) {
+
+        while (true) {
+            if (scanner.hasNextInt()) {
+                num = scanner.nextInt();
+                if (num >= 0 && num <= 2100000000) {
+                    break; /*올바른 입력 -> 반복 종료*/
+                } else if (num > 2100000000) {
+                    System.out.println("21억을 초과하지 않아야합니다.");
+                } else {
+                    System.out.println("0 또는 양의 정수를 입력해주세요 : "); /*음수 입력시 재입력 요청*/
+                }
+
+            } else {
+                System.out.println("**에러: 0 이상 21억 이하의 정수를 입력해야합니다");
+                scanner.next(); /*잘못된 입력 제거*/
+            }
         }
+        return num;
+    }
 
-
+    /*게터*/
     public ArrayList<Double> getResultList() {
         return resultList;
     }
+
+    /*세터*/
     public void setResultList(ArrayList<Double> resultList) {
         this.resultList = resultList;
     }
 
+    /*컬렉션 값 제거 매서드*/
+    public void removeResultList() {
+        resultList.remove(0);
+    }
 
 }
-
-
-
