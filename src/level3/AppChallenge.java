@@ -1,13 +1,13 @@
-package level2;
+package level3;
 
 import java.util.ArrayList;
 
-public class App {
+public class AppChallenge {
 
     public static void main(String[] args) {
 
-        // Calculator 객체 생성
-        Calculator c = new Calculator();
+        // ArithmeticCalculator 객체 생성
+        ArithmeticCalculator c = new ArithmeticCalculator();
 
         /*반복문을 사용하되, 반복의 종료를 알려주는 'N' 문자를 입력하기 전까지 무한으로 계산을 진행할 수 있도록 소스 코드를 수정하기*/
         char repeat = 'Y';

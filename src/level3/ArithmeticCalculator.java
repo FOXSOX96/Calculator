@@ -1,10 +1,11 @@
-package level2;
+package level3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class Calculator {
+
+public class ArithmeticCalculator {
 
     // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
     public Scanner scanner = new Scanner(System.in);
@@ -20,6 +21,7 @@ public class Calculator {
      * @return result: 입력시 결과값 생성
      */
     /*양의 정수(0 포함)를 입력받기*/
+
     public double calculate(int a, int b, char op) {
 
         /*첫번째 숫자*/
@@ -76,7 +78,6 @@ public class Calculator {
         System.out.println();
 
         return result;
-
     }
 
     /*계산 메서드*/
