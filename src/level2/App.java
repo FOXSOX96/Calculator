@@ -1,6 +1,4 @@
-package level1;
-
-import level2.Calculator;
+package level2;
 
 import java.util.ArrayList;
 

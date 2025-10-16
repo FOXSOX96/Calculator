@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성">
+      <change afterPath="$PROJECT_DIR$/src/level1/Level1App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level1/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level2/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="level2" />
+        <entry key="$PROJECT_DIR$" value="Calculator" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,7 +69,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#4 on Calculator",
+    "git-widget-placeholder": "level2",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/won/Desktop/Developer/2025/Sparta/Calculator",
     "project.structure.last.edited": "Project",
@@ -82,13 +82,13 @@
       <recent name="$PROJECT_DIR$/src/level1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorBasic">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="level1.App" />
+      <option name="MAIN_CLASS_NAME" value="level2.App" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="level1.*" />
+          <option name="PATTERN" value="level2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,10 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CalculatorBasic" />
         <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.CalculatorBasic" />
-        <item itemvalue="Application.CalculatorBasic" />
       </list>
     </recent_temporary>
   </component>
