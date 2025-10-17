@@ -1,6 +1,7 @@
 package level3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AppChallenge {
 
@@ -27,6 +28,9 @@ public class AppChallenge {
 
         /*게터*/
         System.out.println("게터 테스트 : " + c.getResultList());
+
+        /*게터: 최근 입력값보다 큰 출력값*/
+        System.out.println("최근 입력값보다 큰 출력값 : " + c.getbiggerResultList());
 
         /*컬렉션 값 제거 매서드*/
         c.removeResultList();

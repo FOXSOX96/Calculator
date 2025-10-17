@@ -1,9 +1,10 @@
 package level3;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.text.DecimalFormat;
-
+import java.util.stream.Collectors;
 
 public class ArithmeticCalculator<T extends Number> {
 
@@ -17,6 +18,7 @@ public class ArithmeticCalculator<T extends Number> {
     public Scanner scanner = new Scanner(System.in);
     /* 연산 결과를 저장하는 컬렉션 타입 필드 선언 및 생성 */
     private ArrayList<Double> resultList = new ArrayList<>();
+    private List<Double> biggerResultList = new ArrayList<>();
 
     /**
      * 두 개의 양의 정수(또는 0)를 입력받아 사칙연산(+, -, *, /)을 수행하는 메서드
@@ -79,6 +81,15 @@ public class ArithmeticCalculator<T extends Number> {
         }
         System.out.println();
 
+        /*최근 입력값보다 큰 출력값*/
+        T biggerNum1 = num1;
+        T biggerNum2 = num2;
+        this.biggerResultList = resultList.stream()
+                .filter(x -> x > biggerNum1.doubleValue() && x > biggerNum2.doubleValue())
+                .collect(Collectors.toList());
+
+
+
         return result;
     }
 
@@ -101,6 +112,11 @@ public class ArithmeticCalculator<T extends Number> {
     /*게터*/
     public ArrayList<Double> getResultList() {
         return resultList;
+    }
+
+    /*게터: 최근 입력값보다 큰 출력값*/
+    public List<Double> getbiggerResultList() {
+        return biggerResultList;
     }
 
     /*세터*/
