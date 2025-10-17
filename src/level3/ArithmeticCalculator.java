@@ -1,12 +1,20 @@
 package level3;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
 
+
 public class ArithmeticCalculator {
 
+    /*Enum 사칙연산 상수 정의*/
+    Operation ADD = Operation.ADD;
+    Operation MIN = Operation.MIN;
+    Operation MUL = Operation.MUL;
+    Operation DIV = Operation.DIV;
     // Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
     public Scanner scanner = new Scanner(System.in);
     /* 연산 결과를 저장하는 컬렉션 타입 필드 선언 및 생성 */
@@ -21,8 +29,9 @@ public class ArithmeticCalculator {
      * @return result: 입력시 결과값 생성
      */
     /*양의 정수(0 포함)를 입력받기*/
-
     public double calculate(int a, int b, char op) {
+
+
 
         /*첫번째 숫자*/
         System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
@@ -49,19 +58,19 @@ public class ArithmeticCalculator {
         double result = 0;
         switch (op) {
             case '+':
-                result = (double) a + (double) b; /*21억 오버플로우 방지*/
+                result = Operation.ADD.apply(a,b);
                 break;
             case '-':
-                result = (double) a - (double) b;
+                result = Operation.MIN.apply(a,b);
                 break;
             case '*':
-                result = (double) a * (double) b;
+                result = Operation.MUL.apply(a,b);
                 break;
             case '/':
                 if (b == 0) {
                     System.out.println("**에러: 0으로 나눌 수 없습니다!");
                 }
-                result = (double) a / (double) b;
+                result = Operation.DIV.apply(a,b);
                 break;
         }
         /* 2/2처럼 나누어떨어질 때 1.0으로 표기되는 문제해결*/
