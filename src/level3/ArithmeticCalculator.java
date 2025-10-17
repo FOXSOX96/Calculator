@@ -68,6 +68,14 @@ public class ArithmeticCalculator<T extends Number> {
                 result = Operation.DIV.applyN(num1, num2);
                 break;
         }
+
+        /* Infinity, NaN 예외 처리 */
+        if (Double.isInfinite(result)) {
+            System.out.println("**에러: 결과가 너무 커서 Infinity(무한대)로 표시됩니다.");
+        } else if (Double.isNaN(result)) {
+            System.out.println("**에러: 계산 결과가 유효하지 않습니다 (예: 0/0).");
+        }
+
         /* 2/2처럼 나누어떨어질 때 1.0으로 표기되는 문제해결*/
         /* 정수 계산에 소수점.0으로 표기되는 문제해결*/
         DecimalFormat df = new DecimalFormat("0.###############");
@@ -126,7 +134,11 @@ public class ArithmeticCalculator<T extends Number> {
 
     /*컬렉션 값 제거 매서드*/
     public void removeResultList() {
+        if (resultList.isEmpty()) {
+            System.out.println("**에러: 삭제할 결과값이 없습니다. (리스트가 비어 있음)");
+            return;
+        }
         resultList.remove(0);
+        System.out.println("리스트의 첫 번째 결과값이 제거되었습니다.");
     }
-
 }
