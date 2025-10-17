@@ -6,18 +6,21 @@ enum Operation {
             return x + y;
         }
     },
-    MIN('-'){
+    MIN('-') {
         public double apply(double x, double y) {
             return x - y;
         }
     },
-    MUL('*'){
+    MUL('*') {
         public double apply(double x, double y) {
             return x * y;
         }
     },
-    DIV('/'){
+    DIV('/') {
         public double apply(double x, double y) {
+            if (y == 0.0) {
+                System.out.println("**에러: 0으로 나눌 수 없습니다!");
+            }
             return x / y;
         }
     };
@@ -33,11 +36,8 @@ enum Operation {
     /*기능*/
     public abstract double apply(double x, double y);
 
-    /*입력 받은 연산 기호를 enum으로 변환*/
-    public Operation fromSymbol(char ch) {
-        for (Operation op : values()) {
-            if (op.symbol == ch) return op;
-        }
-        throw new IllegalArgumentException("지원하지 않는 연산자: " + ch);
+    /*제네릭T의 Number 오버로드*/
+    double applyN(Number a, Number b) {
+        return apply(a.doubleValue(), b.doubleValue());
     }
 }

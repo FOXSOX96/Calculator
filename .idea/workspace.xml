@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="style : Level 2 Calculator를 가져오고 메서드 단어수정, 클래스명 수정&#10;feat : Enum타입 간이생성">
-      <change afterPath="$PROJECT_DIR$/src/level3/Operation.java" afterDir="false" />
+    <list default="true" id="4cb5b1ff-3d34-414c-879e-f41b673bff77" name="Changes" comment="feat : Enum 사칙연산 상수 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level3/AppChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level3/AppChallenge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level3/ArithmeticCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level3/OperatorType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level3/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/level3/Operation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760620531850</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat : Enum 사칙연산 상수 생성">
+      <option name="closed" value="true" />
+      <created>1760675118703</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760675118703</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +290,7 @@
     <MESSAGE value="feat ; 캡슐화는 해두었었고, 게터와 세터 예시 작성" />
     <MESSAGE value="Level1 CalculatorBasic 업로드&#10;Level2 Calculator 완료" />
     <MESSAGE value="style : Level 2 Calculator를 가져오고 메서드 단어수정, 클래스명 수정&#10;feat : Enum타입 간이생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="style : Level 2 Calculator를 가져오고 메서드 단어수정, 클래스명 수정&#10;feat : Enum타입 간이생성" />
+    <MESSAGE value="feat : Enum 사칙연산 상수 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Enum 사칙연산 상수 생성" />
   </component>
 </project>
