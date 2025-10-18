@@ -32,7 +32,7 @@ public class ArithmeticCalculator<T extends Number> {
     public double calculate(T num1, T num2, char symbol) {
 
         /*첫번째 숫자*/
-        System.out.println("첫 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+        System.out.println("첫 번째 숫자를 입력하세요 : ");
         num1 = setType();
 
         /*사칙연산*/
@@ -48,7 +48,7 @@ public class ArithmeticCalculator<T extends Number> {
         }
 
         /*두번째 숫자*/
-        System.out.println("두 번째 숫자를 입력하세요 (0 또는 양의 정수) : ");
+        System.out.println("두 번째 숫자를 입력하세요 : ");
         num2 = setType();
 
         /* 연산 */
